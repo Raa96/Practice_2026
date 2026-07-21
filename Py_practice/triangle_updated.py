@@ -14,4 +14,4 @@ def area_of_triangle(a, b, c):
 
 
 print(area_of_triangle(1., 1., 2. ** .5))
-
+ 
