@@ -1,6 +1,6 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
-                roman = {
+        roman = {
             'I': 1,
             'V': 5,
             'X': 10,
@@ -11,7 +11,7 @@ class Solution:
         }
 
         total = 0
-    
+
         for i in range(len(s)):
             if i < len(s) - 1 and roman[s[i]] < roman[s[i + 1]]:
                 total -= roman[s[i]]
@@ -19,4 +19,3 @@ class Solution:
                 total += roman[s[i]]
 
         return total
-        

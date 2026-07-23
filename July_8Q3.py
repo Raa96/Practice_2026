@@ -7,7 +7,6 @@ replacements = {
     "apple": "orange",
     "red": "blue"
 }
-
 # Replace words in the sentence
 words = sentence.split()
 result = [replacements.get(word, word) for word in words]
